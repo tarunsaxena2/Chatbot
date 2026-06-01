@@ -29,12 +29,6 @@ response = client.audio.transcriptions.create(
 
 print(response.text)
 
-response = client.images.generate(
-    model = "dall-e-2",
-    prompt = "A boy drinking at an American beach",
-    n = 1,
-    size = "1024x1024"
-)
 image_url = response.data[0].url
 
 print(f"Your image is ready at : {image_url}")
