@@ -28,7 +28,6 @@ df.to_csv("customers.csv", index=False)
 
 df = pd.read_csv("customers.csv")
 
-# OpenAI client (add your API key)
 client = OpenAI(api_key="")
 
 for text in df["feedback"]:
