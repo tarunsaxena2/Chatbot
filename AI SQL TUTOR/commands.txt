@@ -1,0 +1,47 @@
+===================================================
+  COMMANDS TO RUN THE LANGUAGE TUTOR STREAMLIT APP
+===================================================
+
+STEP 1 - Navigate to the project folder:
+-----------------------------------------
+cd "C:\Users\Dell\Desktop\Gen AI Workshop\LanguageTutor-main\LanguageTutor-main"
+
+
+STEP 2 - Create the missing __init__.py in pages folder:
+---------------------------------------------------------
+echo. > pages\__init__.py
+
+
+STEP 3 - Install all packages from requirements.txt:
+-----------------------------------------------------
+pip install -r requirements.txt --only-binary=:all:
+
+
+STEP 4 - Install sounddevice separately via conda:
+---------------------------------------------------
+conda install -c conda-forge sounddevice -y
+
+
+pip install sounddevice
+
+
+STEP 5 - Run the app:
+----------------------
+streamlit run app.py
+
+
+===================================================
+  IMPORTANT NOTES
+===================================================
+
+1. Do NOT activate the venv. Run everything in base Anaconda environment.
+
+2. Before running, remove "import config" from these 3 files:
+   - pages\grammar_fun.py
+   - pages\image_comprehension.py
+   - pages\reading_translation.py
+
+3. Once the app starts, open your browser and go to:
+   http://localhost:8501
+
+===================================================
